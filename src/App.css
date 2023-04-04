@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.left {
+  text-align: left;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* .align-items-center {
+  align-items: center;
+} */
+
+.center {
+  text-align: center;
+}
+
+.justify-around {
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  font-family: 'Rubik';
+}
+
+.menu {
+  justify-content: space-between;
+  width: 55%;
+}
+
+.menu a {
+  transition: 0.2s;
+  padding: 6px 10px;
+  width: 120px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #809fee00;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  border: 2px solid #809FEE;
+  color: #7996e0;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav img {
+  width: 180px;
+}
+
+nav button {
+  transition: 0.2s;
+  padding: 15px 25px;
+  background-color: white;
+  color: #809FEE;
+  border: 2px solid #809FEE;
+}
+
+.buttons {
+  border-radius: 10px;
+}
+
+.buttons button:hover {
+  background-color: #809FEE;
+  color: white;
+}
+
+.started {
+  padding-top: 70px;
+  height: 580px;
+}
+
+.started h1 {
+  font-size: 70px;
+}
+
+.started .texts {
+  width: 50%;
+}
+
+.started span {
+  color: #809FEE;
+}
+
+.texts p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.texts a {
+  display: inline-block;
+  border-radius: 21px;
+  text-align: center;
+  background: linear-gradient(180.76deg, rgba(69, 39, 249, 0.78) 11.75%, rgba(124, 16, 208, 0.46) 109.88%);
+  color: white;
+  padding: 12px 50px;
+  transition: 0.2s;
+  transform: scale(1 , 1);
+  font-size: 25px;
+  margin-top: 60px;
+}
+
+.texts a:hover {
+  transform: scale(1.1 , 1.1);
+}
+
+.started img {
+  width: 400px;
+  animation: moving 5s infinite;
+}
+
+.App {
+  font-weight:800;
+  font-size:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.flexmenu {
+  justify-content: space-between;
+}
+
+.burgermenu {
+  display: none;
+}
+
+.aboutUs {
+  background: linear-gradient(179.17deg, #BF86EB 0%, rgba(4, 59, 255, 0.4) 100.59%);
+  padding: 60px 0;
+  padding-top: 100px;
+}
+
+.aboutusdivs {
+  width: 80%;
+  margin: auto;
+}
+
+.info {
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #FCFCFC;
+  width: 500px;
+  height: 250px;
+  transition: 0.5s;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.info:nth-child(2) {
+  order: 2;
+  margin-top: 30px;
+}
+
+.icon {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FCFCFC;
+  font-size: 40px;
+  color: #FCFCFC;
+}
+
+.info p {
+  text-align: left;
+  width: 80%;
+  margin:12px auto;
+  color: white;
+  font-size: 20px;
+}
+main {
+  margin-top: 190px;
+}
+
+.goal {
+  width: 600px;
+  margin: 0 70px;
+  background-color: #FCFCFC;
+  padding: 30px;
+  height: 40vh;
+  border-radius: 20px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.goals {
+  align-items: center;
+  justify-content: center;
+}
+
+.goal h3 {
+  color: #DB5DD6;
+}
+
+.goal p {
+  width: 90%;
+  margin: auto;
+  font-size: larger
+}
+
+.goalnumber {
+  background-color: #FCFCFC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 70px;
+  padding: 20px 0; 
+  border-radius: 50px;
+  position: relative;
+  top: 50px;
+  z-index: 4;
+  color: #809FEE;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0 , -50px);
+  }
+  50% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0 , -50px);
+  }
+}
+
+.adaptive {
+  display: none;
+}
+.ourgoals h1 {
+  margin: 0;
+  font-size: 50px;
+  color: #FCFCFC;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.ourgoals {
+  padding: 80px 0;
+  background: linear-gradient( rgba(4, 59, 255, 0.4) 131.59%, rgba(196, 212, 255, 0.41) 100%);
+  padding-bottom: 200px
+}
+
+.radial {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(202, 119, 240, 0.75) 0%, rgba(255, 130, 227, 0) 100%);
+  position: absolute;
+  width: 65%;
+  left: 17%;
+  padding: 300px 0;
+  /* filter: blur(80px); */
+  /* border-radius: 50%; */
+}
+
+.upbutton {
+  padding: 10px 15px;
+  color: #7996e0;
+  border: 2px solid #7996e0;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  background-color: #fcfcfc60;
+}
+
+.upbutton:hover {
+  box-shadow: 0px 0px 8px 5px #809feea2;
+}
+
+footer {
+  background: linear-gradient(179.17deg, #BF86EB 55.71%, rgba(4, 58, 255, 0.473) 100.59%);
+  padding: 80px 0
+}
+
+.suggestion {
+  background-color: white;
+  width: 40%;
+  margin: auto;
+  padding: 30px 0 80px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+}
+
+.suggestion p {
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
+}
+
+.suggestion h1 {
+  text-align: center;
+  font-size: 40px;
+  width: 90%;
+  margin: 10px auto 60px;
+}
+
+.realfoot {
+  border-top: 1px solid black;
+  padding-top: 20px;
+  width: 80%;
+  margin: 200px auto 0;
+}
+
+.socialnetworks .bi-telegram {
+  color: #0088cc;
+}
+
+.socialnetworks i {
+  font-size: 50px;
+}
+
+.bi-envelope-at-fill {
+  color: #c05dde;
+}
+
+.bi-whatsapp {
+  color: #36b445ec;
+}
+
+.socialnetworks {
+  width: 15%;
+  margin: 50px auto 0;
+  justify-content: space-between;
+}
+
+@media(min-width:651px) and (max-width:1400px) {
+  .started img {
+    width: 300px;
+  }
+  .texts h1 {
+    font-size: 30px;
+  }
+
+  .texts p {
+    font-size: 18px;
+  }
+  .menu {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .info {
+    width: 40%;
+    height: 280px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+  .info p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .started {
+    width: 90%;
+  }
+  .App {
+    font-size: 40px;
+  }
+  .goal {
+    height: 350px;
+    width: 400px;
+    margin: 0 70px;
+  }
+
+  .goals {
+    align-items: center;
+  }
+
+  .goal p {
+    font-size: 16px;
+  }
+  .socialnetworks {
+    width: 90%;
+  }
+  .suggestion {
+    width: 60%;
+  }
+}
+
+@media(max-width:650px) {
+  .App {
+    font-size: 40px;
+  }
+  .burgermenu {
+    display: block;
+  }
+
+  .burgermenu img {
+    width: 50px;
+  }
+  .burgermenu i {
+    font-size: 30px;
+  }
+  .adaptivemenu {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu {
+    transition: 0.4s;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    overflow: hidden;
+  }
+  .menu a {
+    border-radius: 10px;
+    margin: 8px 0;
+    border: 2px solid #809FEE;
+    color: #7996e0;
+    font-size: 14px;
+    width: 100px;
+  }
+  .buttonssecond {
+    margin-bottom: 7px;
+  }
+  .adaptive {
+    display: flex;
+  }
+
+  .buttons {
+    display: none;
+  }
+  .adaptivelogo img {
+    width: 140px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .started img {
+    margin-top: 80px;
+    width: 200px;
+  }
+  .started h1 {
+    font-size: 25px;
+  }
+  .started {
+    flex-direction: column;
+  }
+  .texts a {
+    font-size: 18px;
+  }
+  .started .texts {
+    width: 100%;
+  }
+  .started {
+    padding-top: 100px;
+  }
+  nav {
+    padding-bottom: 0;
+  }
+  .texts p {
+    font-size: 15px;
+  }
+  .info p {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .info {
+    width: 200px;
+    height: 200px;
+  }
+  .info:nth-child(2) {
+    margin-top: 0;
+  }
+  nav button {
+    padding: 8px 15px;
+  }
+  nav button:hover {
+    background-color: #809FEE;
+    color: white;
+  }
+  .aboutUs {
+    padding-bottom: 100px;
+  }
+  .ourgoals h1 {
+    font-size: 30px;
+  }
+  .goals {
+    flex-direction: column;
+  }
+
+  .goal {
+    width: 60%;
+    height: 50%;
+    margin: 0;
+  }
+
+  .goal p {
+    font-size: 12px;
+    width: 95%;
+  }
+  .radial {
+    width: 100%;
+    left: 0;
+    height: 150vh;
+    padding: 0;
+  }
+  .upbutton {
+    padding: 8px 12px;
+    font-size: 25px;
+  }
+  .suggestion h1 {
+    font-size: 20px;
+  }
+  .suggestion {
+    width: 80%;
+  }
+
+  .suggestion p {
+    font-size: 15px;
+  }
+
+  .realfoot img{
+    width: 150px;
+  }
+  .socialnetworks {
+    width: 100%;
+  }
+}
